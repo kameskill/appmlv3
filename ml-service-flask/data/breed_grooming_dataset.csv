@@ -1,0 +1,30 @@
+breed,coat_type,coat_length,size,shedding,grooming_frequency,matting_risk,heat_sensitivity,moisture_sensitivity,double_coat,clipping_risk,source
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Timmy Tails local-market profile
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,AKC breed profile
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,AKC breed profile
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,AKC breed profile
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,AKC breed profile
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,AKC breed profile
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,AKC breed profile
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,AKC breed profile
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,AKC breed profile
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,AKC breed profile
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,AKC breed profile
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,AKC breed profile
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,AKC breed profile
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,AKC breed profile
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,AKC breed profile
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,AKC breed profile
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,AKC breed profile
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,AKC breed profile
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,AKC breed profile
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,AKC breed profile
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,AKC breed profile
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,AKC breed profile
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,AKC breed profile
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,AKC breed profile
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,AKC breed profile
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Timmy Tails local-market profile
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,AKC breed profile
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Timmy Tails fallback profile
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Timmy Tails fallback profile

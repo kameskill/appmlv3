@@ -1,0 +1,581 @@
+breed,coat_type,coat_length,size,shedding,grooming_frequency,matting_risk,heat_sensitivity,moisture_sensitivity,double_coat,clipping_risk,style,season,price,maintenance_level,season_fit,clip_intensity,undercoat_safe,base_popularity,coat_compatible,size_compatible,expert_score
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,84.32249999999999
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,83.35699999999999
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,22.5275
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,24.053
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,1,14.427000000000001
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,1,18.302500000000002
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,18.617000000000004
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,20.730000000000004
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.278
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,12.552
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,74.6475
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,83.732
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,90.80699999999999
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,85.243
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,0,1,5.3125
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,0,1,9.5275
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,90.42
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,85.03699999999999
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,89.05499999999999
+Aspin,single,short,medium,medium,low,0.2,0.45,0.35,0,0.1,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,88.735
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,0,12.752499999999998
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,0,11.994999999999997
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,0,5.0
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,0,6.3549999999999995
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,68.911
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,73.45750000000001
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,19.541000000000004
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.990000000000002
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,92.61099999999999
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,86.965
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.4225
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.4725
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Labrador Retriever,double,short,large,high,medium,0.2,0.75,0.55,1,0.9,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,0,20.182499999999997
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,0,18.268
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,0,5.067499999999999
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,0,6.571999999999999
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,69.395
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,73.65
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.465000000000003
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.200000000000003
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,93.252
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.5325
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.63
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Golden Retriever,double,long,large,high,high,0.75,0.8,0.75,1,0.95,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,0,13.467499999999998
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,0,12.267999999999999
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,0,5.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,0,6.571999999999999
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,69.15299999999999
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,73.65
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.003000000000004
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.200000000000003
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,97.01299999999999
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,87.252
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.4775
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.63
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+German Shepherd,double,medium,large,high,medium,0.55,0.8,0.65,1,0.95,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,0,13.824999999999996
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,0,13.087
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,0,5.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,0,7.222999999999999
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,69.274
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,74.2275
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.234
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.830000000000002
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,97.96399999999998
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,88.113
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.504999999999995
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,65.10249999999999
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Siberian Husky,double,medium,large,high,high,0.6,0.95,0.7,1,1.0,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,0,21.74
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,0,20.287
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,0,5.26
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,0,7.222999999999999
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,69.51599999999999
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,74.2275
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.696000000000005
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.830000000000002
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,95.313
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.559999999999995
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,65.10249999999999
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Chow Chow,double,long,large,high,high,0.9,0.95,0.8,1,1.0,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,0,21.74
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,0,20.287
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,0,5.26
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,0,7.222999999999999
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,69.51599999999999
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,74.2275
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.696000000000005
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.830000000000002
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,95.313
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.559999999999995
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,65.10249999999999
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Samoyed,double,long,large,high,high,0.9,0.95,0.8,1,1.0,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,1,32.11
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,1,31.268
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,23.49
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,25.572000000000003
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,69.032
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,73.65
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,19.772000000000006
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.200000000000003
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,95.562
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,87.252
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.449999999999996
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.63
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Pembroke Welsh Corgi,double,medium,medium,high,medium,0.45,0.8,0.6,1,0.95,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,1,40.339999999999996
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,1,38.614
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,24.259999999999998
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,26.006
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,0,50.516
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,0,55.035000000000004
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.696000000000005
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.620000000000005
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,94.62599999999999
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.559999999999995
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.945
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Pomeranian,double,long,small,medium,high,0.85,0.9,0.8,1,1.0,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,1,39.582499999999996
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,1,38.214
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,24.0675
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,26.006
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,0,50.394999999999996
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,0,55.035000000000004
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.465000000000003
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.620000000000005
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,94.226
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.5325
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.945
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Japanese Spitz,double,long,small,high,high,0.8,0.9,0.75,1,1.0,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,1,32.824999999999996
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,1,30.994999999999997
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,23.875
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,25.355
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,69.274
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,73.45750000000001
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.234
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.990000000000002
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,98.46399999999998
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,86.965
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.504999999999995
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.4725
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Border Collie,double,medium,medium,high,high,0.65,0.75,0.7,1,0.95,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,95.85499999999999
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,93.14099999999999
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,1,1,78.64500000000001
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,1,1,79.78900000000002
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,0,50.757999999999996
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,0,54.8425
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,21.158000000000005
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.410000000000004
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,1,1,65.97200000000001
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,1,1,67.89599999999999
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,79.18499999999999
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,86.196
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,95.139
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.614999999999995
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.7875
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,94.821
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,0,1,39.29
+Shih Tzu,silky,long,small,low,high,0.95,0.85,0.9,0,0.2,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,0,1,37.254999999999995
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,95.85499999999999
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,93.14099999999999
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,1,1,78.64500000000001
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,1,1,79.78900000000002
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,0,50.757999999999996
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,0,54.8425
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,21.158000000000005
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.410000000000004
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,1,1,65.97200000000001
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,1,1,67.89599999999999
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,79.18499999999999
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,86.196
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,95.139
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.614999999999995
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.7875
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,94.821
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,0,1,39.29
+Maltese,silky,long,small,low,high,0.95,0.85,0.9,0,0.15,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,0,1,37.254999999999995
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,95.0975
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,92.46799999999999
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,1,1,78.4525
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,1,1,79.572
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,0,50.637
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,0,54.65
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.927000000000003
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.200000000000003
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,1,1,65.818
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,1,1,67.728
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,78.7725
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,85.88799999999999
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,94.452
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.5875
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.63
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,94.148
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,0,1,38.905
+Yorkshire Terrier,silky,long,small,low,high,0.9,0.8,0.85,0,0.15,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,0,1,36.94
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,1,41.855
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,1,39.141
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,24.645
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,25.789
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,0,50.757999999999996
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,0,54.8425
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,21.158000000000005
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.410000000000004
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,95.139
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.614999999999995
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.7875
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Lhasa Apso,double,long,small,medium,high,0.95,0.85,0.9,1,0.85,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,95.85499999999999
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,92.86799999999998
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,1,1,78.64500000000001
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,1,1,79.572
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,1,15.758000000000003
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,1,19.650000000000002
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,1,1,75.158
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,1,1,76.2
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,1,1,65.97200000000001
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,1,1,67.728
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,79.18499999999999
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,85.88799999999999
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,94.85199999999999
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.614999999999995
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.63
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,94.54799999999999
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,0,1,39.29
+Poodle,curly,long,medium,low,high,0.95,0.8,0.9,0,0.1,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,0,1,36.94
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,95.85499999999999
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,92.86799999999998
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,1,1,78.64500000000001
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,1,1,79.572
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,0,5.0
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,0,5.0
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,1,1,75.158
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,1,1,76.2
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,1,1,65.97200000000001
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,1,1,67.728
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,79.18499999999999
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,85.88799999999999
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,94.85199999999999
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.614999999999995
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.63
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,94.54799999999999
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,0,1,39.29
+Bichon Frise,curly,long,small,low,high,0.95,0.8,0.9,0,0.1,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,0,1,36.94
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,86.4675
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,84.449
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,23.6825
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,24.921000000000003
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,0,5.0
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,0,5.0
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,20.003000000000004
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.570000000000004
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,42.922499999999985
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,50.763999999999996
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,97.51299999999999
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,86.39099999999999
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.4775
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.1575
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,0,1,53.365
+Miniature Schnauzer,wire,medium,small,low,high,0.6,0.65,0.65,1,0.45,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,0,1,51.995
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,95.455
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,92.195
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,1,1,78.64500000000001
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,1,1,79.355
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,69.758
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,73.45750000000001
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,21.158000000000005
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.990000000000002
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,1,1,65.97200000000001
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,1,1,67.55999999999999
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,79.18499999999999
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,85.58
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,99.0
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,94.165
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.614999999999995
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.4725
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,93.875
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,0,1,39.29
+Cocker Spaniel,silky,long,medium,medium,high,0.9,0.75,0.9,0,0.2,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,0,1,36.625
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,84.67999999999999
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,84.17599999999999
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,22.72
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,24.704
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,0,5.0
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,0,5.0
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,18.848000000000003
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.360000000000003
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.432000000000002
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,13.056
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,75.05999999999999
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,84.65599999999999
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,90.758
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,86.104
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,0,1,5.34
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,0,1,10.0
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,90.36
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,85.856
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,89.44
+Dachshund,single,short,small,low,low,0.15,0.6,0.4,0,0.1,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,89.68
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,1,31.037499999999998
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,1,30.176
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,22.9125
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,24.704
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,1,68.669
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,1,72.88000000000001
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,19.079000000000004
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.360000000000003
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,91.20899999999999
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,86.104
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.3675
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.0
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Beagle,double,short,medium,medium,low,0.15,0.6,0.45,1,0.9,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,83.96499999999999
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,83.63
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,22.335
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,24.270000000000003
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,0,5.0
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,0,5.0
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,18.386000000000003
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,20.940000000000005
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.124
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,12.719999999999999
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,74.23499999999999
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,84.03999999999999
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,89.356
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,85.53
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,0,1,5.285
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,0,1,9.684999999999999
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,88.98
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,85.31
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,88.67
+Chihuahua,single,short,small,low,low,0.1,0.5,0.3,0,0.1,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,89.05000000000001
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,0,1,31.752499999999998
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,0,1,32.086999999999996
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,23.2975
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,26.223
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,1,0,49.911
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,1,0,55.2275
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,19.541000000000004
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.830000000000002
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,5.0
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,5.0
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,0,1,5.0
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,0,1,5.0
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,92.61099999999999
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,88.113
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.4225
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,65.10249999999999
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,99.0
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,99.0
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,99.0
+Pug,double,short,small,high,medium,0.2,0.95,0.55,1,0.9,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,99.0
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,85.0375
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,86.08699999999999
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,22.9125
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,26.223
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,0,5.0
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,0,5.0
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,19.079000000000004
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.830000000000002
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.586000000000002
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,14.232
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,75.4725
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,86.812
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,91.20899999999999
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,88.113
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,0,1,5.367500000000001
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,0,1,11.1025
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,90.8
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,87.767
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,89.825
+French Bulldog,single,short,small,low,low,0.15,0.95,0.45,0,0.1,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,91.885
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,85.0375
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,86.08699999999999
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,22.9125
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,26.223
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,1,14.669000000000002
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,1,20.2275
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,19.079000000000004
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.830000000000002
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.586000000000002
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,14.232
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,75.4725
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,86.812
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,91.20899999999999
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,88.113
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,0,1,5.367500000000001
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,0,1,11.1025
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,90.8
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,87.767
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,89.825
+Bulldog,single,short,medium,low,low,0.15,0.95,0.45,0,0.1,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,91.885
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,84.67999999999999
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,85.541
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,22.72
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,25.789
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,1,14.548000000000002
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,1,19.8425
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,18.848000000000003
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,22.410000000000004
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.432000000000002
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,13.895999999999999
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,75.05999999999999
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,86.196
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,90.758
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,87.539
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,0,1,5.34
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,0,1,10.7875
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,90.36
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,87.221
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,89.44
+American Bully,single,short,medium,low,low,0.15,0.85,0.4,0,0.1,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,91.25500000000001
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,84.67999999999999
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,84.449
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,22.72
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,24.921000000000003
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,0,5.0
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,0,5.0
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,18.848000000000003
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.570000000000004
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.432000000000002
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,13.224
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,75.05999999999999
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,84.964
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,91.258
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,86.39099999999999
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,1,1,59.339999999999996
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,1,1,64.1575
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,90.86
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,86.129
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,0,1,35.44
+Jack Russell Terrier,wire,short,small,medium,low,0.2,0.65,0.4,0,0.2,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,0,1,35.995
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,85.7525
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,84.449
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,23.2975
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,24.921000000000003
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,1,14.911000000000001
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,1,19.0725
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,19.541000000000004
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.570000000000004
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.894000000000002
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,13.224
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,76.29749999999999
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,84.964
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,95.61099999999999
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,86.39099999999999
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,0,1,5.4225
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,0,1,10.157499999999999
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,95.18
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,86.129
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,90.595
+Mixed Breed,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,89.995
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Puppy Cut,rainy,800.0,0.35,0.82,0.65,1,0.82,1,1,85.7525
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Puppy Cut,dry,800.0,0.35,0.78,0.65,1,0.82,1,1,84.449
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Teddy Bear Cut,rainy,800.0,0.65,0.58,0.55,1,0.78,0,1,23.2975
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Teddy Bear Cut,dry,800.0,0.65,0.62,0.55,1,0.78,0,1,24.921000000000003
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Feathered Trim,rainy,1100.0,0.78,0.42,0.25,1,0.64,0,1,14.911000000000001
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Feathered Trim,dry,1100.0,0.78,0.55,0.25,1,0.64,0,1,19.0725
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Lamb Cut,rainy,800.0,0.58,0.52,0.6,1,0.68,0,1,19.541000000000004
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Lamb Cut,dry,800.0,0.58,0.6,0.6,1,0.68,0,1,21.570000000000004
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Lion Cut,rainy,1200.0,0.72,0.4,0.85,0,0.5,0,1,10.894000000000002
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Lion Cut,dry,1200.0,0.72,0.48,0.85,0,0.5,0,1,13.224
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Summer Cut,rainy,750.0,0.25,0.48,0.9,0,0.74,1,1,76.29749999999999
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Summer Cut,dry,750.0,0.25,0.88,0.9,0,0.74,1,1,84.964
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Sanitary Trim,rainy,800.0,0.18,0.95,0.2,1,0.85,1,1,95.61099999999999
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Sanitary Trim,dry,800.0,0.18,0.82,0.2,1,0.85,1,1,86.39099999999999
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Show Cut,rainy,1500.0,0.95,0.32,0.45,1,0.42,0,1,5.4225
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Show Cut,dry,1500.0,0.95,0.45,0.45,1,0.42,0,1,10.157499999999999
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Bath & Brush Only,rainy,600.0,0.2,0.9,0.0,1,0.88,1,1,95.18
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,Bath & Brush Only,dry,600.0,0.2,0.78,0.0,1,0.88,1,1,86.129
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,De-shedding Treatment,rainy,700.0,0.3,0.92,0.05,1,0.9,1,1,90.595
+Other,single,medium,medium,medium,medium,0.5,0.65,0.55,0,0.3,De-shedding Treatment,dry,700.0,0.3,0.9,0.05,1,0.9,1,1,89.995

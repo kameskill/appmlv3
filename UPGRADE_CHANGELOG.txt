@@ -1,0 +1,26 @@
+TIMMY TAILS AI/ML UPGRADE
+
+Added:
+- Dataset-trained Random Forest grooming recommendation model
+- 29-breed grooming dataset, including common and local categories
+- 10-style haircut compatibility dataset
+- Generated 580-row breed/style/season recommendation training dataset
+- Live recommendation popularity adjustment from confirmed/completed bookings
+- Double-coat clipping safeguards and recommendation warnings
+- ML sales forecast endpoint trained from MongoDB appointment history
+- Ridge, Random Forest, and Gradient Boosting model comparison
+- TimeSeriesSplit validation, MAE, sMAPE, confidence, and feature importance
+- Safe statistical fallback when there is not enough real business history
+- Admin ML Trends data-health, metrics, feature-importance, and dataset panels
+- Backend recommendation proxy with direct-ML frontend fallback
+- Dynamic breed lists in Booking and User Dashboard
+- Model and dataset documentation
+
+Validated:
+- Frontend production build succeeded
+- Express route syntax checks succeeded
+- Flask endpoint tests succeeded
+- Recommendation model and sales forecasting functions executed successfully
+
+Note:
+The existing project has ESLint findings from its React Compiler lint configuration in older files, but the Vite production build succeeds. These pre-existing lint findings do not prevent compilation.
