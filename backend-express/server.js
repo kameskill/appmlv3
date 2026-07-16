@@ -7,6 +7,9 @@ const connectDB = require('./config/db')
 
 const app = express()
 
+// Render and other cloud platforms use a reverse proxy.
+app.set('trust proxy', 1)
+
 // Connect to MongoDB
 connectDB()
 
@@ -14,43 +17,94 @@ connectDB()
 // CORS
 // ─────────────────────────────────────────────────────────────
 
-const allowedOrigins = [
-    process.env.FRONTEND_URL || 'http://localhost:5173',
+const defaultOrigins = [
     'http://localhost:5173',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://timmytails.vercel.app',
+    'https://appmlv3.vercel.app'
 ]
 
-app.use(
-    cors({
-        origin: (origin, callback) => {
-            // Allow requests without an origin, such as Postman.
-            if (!origin || allowedOrigins.includes(origin)) {
-                return callback(null, true)
-            }
-
-            return callback(new Error('Not allowed by CORS'))
-        },
-        credentials: true
-    })
+// FRONTEND_URL may contain one URL or multiple comma-separated URLs.
+const environmentOrigins = String(
+    process.env.FRONTEND_URL || ''
 )
+    .split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean)
+
+const allowedOrigins = [
+    ...new Set([
+        ...defaultOrigins,
+        ...environmentOrigins
+    ])
+]
+
+const corsOptions = {
+    origin: (origin, callback) => {
+        // Allow requests without an Origin header,
+        // such as Postman, Render health checks, and server-to-server calls.
+        if (!origin) {
+            return callback(null, true)
+        }
+
+        if (allowedOrigins.includes(origin)) {
+            return callback(null, true)
+        }
+
+        console.error(`Blocked by CORS: ${origin}`)
+
+        return callback(
+            new Error(
+                `Origin ${origin} is not allowed by CORS`
+            )
+        )
+    },
+
+    credentials: true,
+
+    methods: [
+        'GET',
+        'POST',
+        'PUT',
+        'PATCH',
+        'DELETE',
+        'OPTIONS'
+    ],
+
+    allowedHeaders: [
+        'Content-Type',
+        'Authorization',
+        'Accept'
+    ],
+
+    optionsSuccessStatus: 204
+}
+
+app.use(cors(corsOptions))
 
 // ─────────────────────────────────────────────────────────────
 // Body parsing
 // ─────────────────────────────────────────────────────────────
 
-app.use(express.json({ limit: '10kb' }))
-app.use(express.urlencoded({ extended: false }))
+app.use(
+    express.json({
+        limit: '10kb'
+    })
+)
 
-// Rate limiting is disabled locally.
-const isProduction = process.env.NODE_ENV === 'production'
+app.use(
+    express.urlencoded({
+        extended: false
+    })
+)
+
+const isProduction =
+    process.env.NODE_ENV === 'production'
 
 // ─────────────────────────────────────────────────────────────
 // Rate limiters
 // ─────────────────────────────────────────────────────────────
 
-// General API limiter for production.
-// This is intentionally generous because the dashboard loads
-// several API resources at the same time.
 const apiLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 1000,
@@ -58,16 +112,15 @@ const apiLimiter = rateLimit({
     standardHeaders: true,
     legacyHeaders: false,
 
-    // Disable this limiter during local development.
     skip: () => !isProduction,
 
     message: {
         success: false,
-        message: 'Too many requests. Please wait a moment and try again.'
+        message:
+            'Too many requests. Please wait a moment and try again.'
     }
 })
 
-// Login and password-reset verification protection
 const authLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 20,
@@ -79,11 +132,11 @@ const authLimiter = rateLimit({
 
     message: {
         success: false,
-        message: 'Too many authentication attempts. Please try again later.'
+        message:
+            'Too many authentication attempts. Please try again later.'
     }
 })
 
-// OTP request protection
 const otpLimiter = rateLimit({
     windowMs: 10 * 60 * 1000,
     max: 5,
@@ -95,12 +148,11 @@ const otpLimiter = rateLimit({
 
     message: {
         success: false,
-        message: 'Too many OTP requests. Please wait before requesting another code.'
+        message:
+            'Too many OTP requests. Please wait before requesting another code.'
     }
 })
 
-// Only appointment creation should use this limiter.
-// Reading bookings and checking available slots should not count.
 const bookingLimiter = rateLimit({
     windowMs: 60 * 60 * 1000,
     max: 20,
@@ -112,11 +164,11 @@ const bookingLimiter = rateLimit({
 
     message: {
         success: false,
-        message: 'Too many booking attempts. Please try again later.'
+        message:
+            'Too many booking attempts. Please try again later.'
     }
 })
 
-// Contact-form protection
 const contactLimiter = rateLimit({
     windowMs: 60 * 60 * 1000,
     max: 5,
@@ -128,7 +180,8 @@ const contactLimiter = rateLimit({
 
     message: {
         success: false,
-        message: 'Too many messages sent. Please try again later.'
+        message:
+            'Too many messages sent. Please try again later.'
     }
 })
 
@@ -136,50 +189,81 @@ const contactLimiter = rateLimit({
 // Selective limiter middleware
 // ─────────────────────────────────────────────────────────────
 
-const applyAuthLimiter = (req, res, next) => {
+const applyAuthLimiter = (
+    req,
+    res,
+    next
+) => {
     if (req.method !== 'POST') {
         return next()
     }
 
-    // Apply the stricter OTP limiter only to OTP-sending routes.
     if (
         req.path === '/register/send-otp' ||
         req.path === '/password/send-otp'
     ) {
-        return otpLimiter(req, res, next)
+        return otpLimiter(
+            req,
+            res,
+            next
+        )
     }
 
-    // Apply authentication limiting to login and password reset.
     if (
         req.path === '/login' ||
         req.path === '/password/reset'
     ) {
-        return authLimiter(req, res, next)
+        return authLimiter(
+            req,
+            res,
+            next
+        )
     }
 
     return next()
 }
 
-const applyBookingLimiter = (req, res, next) => {
+const applyBookingLimiter = (
+    req,
+    res,
+    next
+) => {
     // Limit only POST /api/appointments.
-    // GET /my and GET /availability are not limited by this.
-    if (req.method === 'POST' && req.path === '/') {
-        return bookingLimiter(req, res, next)
+    if (
+        req.method === 'POST' &&
+        req.path === '/'
+    ) {
+        return bookingLimiter(
+            req,
+            res,
+            next
+        )
     }
 
     return next()
 }
 
-const applyContactLimiter = (req, res, next) => {
-    if (req.method === 'POST' && req.path === '/') {
-        return contactLimiter(req, res, next)
+const applyContactLimiter = (
+    req,
+    res,
+    next
+) => {
+    if (
+        req.method === 'POST' &&
+        req.path === '/'
+    ) {
+        return contactLimiter(
+            req,
+            res,
+            next
+        )
     }
 
     return next()
 }
 
 // ─────────────────────────────────────────────────────────────
-// General production API protection
+// General API protection
 // ─────────────────────────────────────────────────────────────
 
 app.use('/api', apiLimiter)
@@ -223,9 +307,14 @@ app.use(
 app.get('/api/health', (req, res) => {
     res.json({
         success: true,
-        message: 'Timmy Tails API is running',
-        environment: process.env.NODE_ENV || 'development',
-        timestamp: new Date().toISOString()
+        message:
+            'Timmy Tails API is running',
+        environment:
+            process.env.NODE_ENV ||
+            'development',
+        allowedOrigins,
+        timestamp:
+            new Date().toISOString()
     })
 })
 
@@ -244,28 +333,61 @@ app.use((req, res) => {
 // Global error handler
 // ─────────────────────────────────────────────────────────────
 
-app.use((err, req, res, next) => {
-    console.error(err.stack || err)
+app.use(
+    (
+        err,
+        req,
+        res,
+        next
+    ) => {
+        console.error(
+            err.stack || err
+        )
 
-    res.status(500).json({
-        success: false,
-        message:
-            process.env.NODE_ENV === 'production'
-                ? 'Server error'
-                : err.message
-    })
-})
+        if (
+            err.message?.includes(
+                'not allowed by CORS'
+            )
+        ) {
+            return res
+                .status(403)
+                .json({
+                    success: false,
+                    message:
+                        'This website is not allowed to access the API.'
+                })
+        }
+
+        return res
+            .status(500)
+            .json({
+                success: false,
+                message:
+                    process.env
+                        .NODE_ENV ===
+                        'production'
+                        ? 'Server error'
+                        : err.message
+            })
+    }
+)
 
 // ─────────────────────────────────────────────────────────────
 // Start server
 // ─────────────────────────────────────────────────────────────
 
-const PORT = process.env.PORT || 5000
+const PORT =
+    process.env.PORT || 5000
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(
         `🐾 Timmy Tails API running on port ${PORT} ` +
         `[${process.env.NODE_ENV || 'development'}]`
+    )
+
+    console.log(
+        'Allowed frontend origins:',
+        allowedOrigins
     )
 })
 
