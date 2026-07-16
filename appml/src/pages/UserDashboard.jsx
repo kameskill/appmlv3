@@ -579,7 +579,7 @@ export default function UserDashboard() {
                                             <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className='overflow-hidden'>
                                                 <div className='bg-gradient-to-br from-purple-50 to-fuchsia-50 rounded-2xl p-6 mb-8 border border-purple-100'>
                                                     <h4 className='text-base font-bold text-slate-900 mb-1 flex items-center gap-2'>
-                                                        <Sparkles size={18} className='text-amber-500 fill-amber-500' /> Add Dataset-Trained AI Styling (Optional)
+                                                        <Sparkles size={18} className='text-amber-500 fill-amber-500' /> Add AI Grooming Suggestions (Optional)
                                                     </h4>
                                                     <p className='text-xs text-slate-500 mb-5'>Analyzed for Philippines {seasonDisplay.name.toLowerCase()} conditions.</p>
 
