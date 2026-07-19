@@ -74,6 +74,7 @@ const formatEnglishMonth = (data) => {
 const TABS = [
     { id: 'overview', label: 'Overview', icon: BarChart3 },
     { id: 'appointments', label: 'Bookings', icon: Calendar },
+    { id: 'messages', label: 'Messages', icon: Mail },
     { id: 'analytics', label: 'Analytics', icon: TrendingUp },
     { id: 'ml-trends', label: 'ML Trends', icon: Sparkles },
     { id: 'notifications', label: 'Alerts', icon: Bell }
@@ -89,6 +90,10 @@ export default function Admin() {
     const [analytics, setAnalytics] = useState(null)
     const [notifications, setNotifications] = useState([])
     const [users, setUsers] = useState([])
+    const [contacts, setContacts] = useState([])
+    const [contactFilter, setContactFilter] = useState('all')
+    const [updatingContactId, setUpdatingContactId] = useState(null)
+    const [pendingDeleteContactId, setPendingDeleteContactId] = useState(null)
     const [notificationForm, setNotificationForm] = useState({
         title: '',
         message: '',
@@ -140,6 +145,15 @@ export default function Admin() {
         } catch (e) { toast.error(getErrorMessage(e)) }
     }
 
+    const fetchContacts = async () => {
+        try {
+            const { data } = await adminApi.getContacts()
+            setContacts(data.contacts || [])
+        } catch (e) {
+            toast.error(getErrorMessage(e))
+        }
+    }
+
     const loadAll = async () => {
         setLoading(true)
         await Promise.all([
@@ -147,7 +161,8 @@ export default function Admin() {
             fetchAppointments(),
             fetchAnalytics(),
             fetchNotifications(),
-            fetchUsers()
+            fetchUsers(),
+            fetchContacts()
         ])
         setLoading(false)
     }
@@ -249,6 +264,52 @@ export default function Admin() {
         }
     }
 
+    const handleMarkContactRead = async (id) => {
+        setUpdatingContactId(id)
+
+        try {
+            await adminApi.markContactRead(id)
+
+            setContacts((previous) =>
+                previous.map((contact) =>
+                    contact._id === id
+                        ? { ...contact, read: true }
+                        : contact
+                )
+            )
+
+            toast.success('Message marked as read')
+        } catch (e) {
+            toast.error(getErrorMessage(e))
+        } finally {
+            setUpdatingContactId(null)
+        }
+    }
+
+    const confirmDeleteContact = async () => {
+        if (!pendingDeleteContactId) return
+
+        try {
+            await adminApi.deleteContact(
+                pendingDeleteContactId
+            )
+
+            setContacts((previous) =>
+                previous.filter(
+                    (contact) =>
+                        contact._id !==
+                        pendingDeleteContactId
+                )
+            )
+
+            toast.success('Message deleted')
+        } catch (e) {
+            toast.error(getErrorMessage(e))
+        } finally {
+            setPendingDeleteContactId(null)
+        }
+    }
+
     const filteredAppointments = useMemo(() => {
         let filtered = statusFilter ? appointments.filter(a => a.status === statusFilter) : [...appointments];
         return filtered.sort((a, b) => {
@@ -257,6 +318,32 @@ export default function Admin() {
             return dateA - dateB;
         });
     }, [appointments, statusFilter]);
+
+    const filteredContacts = useMemo(() => {
+        const sorted = [...contacts].sort(
+            (a, b) =>
+                new Date(b.createdAt || 0) -
+                new Date(a.createdAt || 0)
+        )
+
+        if (contactFilter === 'unread') {
+            return sorted.filter(
+                (contact) => !contact.read
+            )
+        }
+
+        if (contactFilter === 'read') {
+            return sorted.filter(
+                (contact) => contact.read
+            )
+        }
+
+        return sorted
+    }, [contacts, contactFilter])
+
+    const unreadContactCount = contacts.filter(
+        (contact) => !contact.read
+    ).length
 
     const StatCard = ({ icon: Icon, label, value, change, color, bg }) => (
         <motion.div whileHover={{ y: -4 }} className='bg-white rounded-3xl p-6 shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-purple-50 h-full flex flex-col justify-between'>
@@ -613,6 +700,244 @@ export default function Admin() {
                                         </div>
                                     )}
                                 </div>
+                            </motion.div>
+                        )}
+
+                        {/* --- MESSAGES TAB --- */}
+                        {activeTab === 'messages' && (
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                className='space-y-6'
+                            >
+                                <div className='bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-purple-50'>
+                                    <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5'>
+                                        <div className='flex items-center gap-3'>
+                                            <div className='w-11 h-11 rounded-2xl bg-gradient-to-br from-purple-500 to-fuchsia-500 text-white flex items-center justify-center shadow-lg shadow-purple-500/20'>
+                                                <Mail size={20} />
+                                            </div>
+
+                                            <div>
+                                                <h2 className='text-xl font-bold text-slate-900'>
+                                                    Contact Messages
+                                                </h2>
+
+                                                <p className='text-sm text-slate-500 mt-1'>
+                                                    Messages submitted through the public Contact Us form.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div className='flex flex-wrap gap-2'>
+                                            {[
+                                                {
+                                                    id: 'all',
+                                                    label: `All (${contacts.length})`
+                                                },
+                                                {
+                                                    id: 'unread',
+                                                    label: `Unread (${unreadContactCount})`
+                                                },
+                                                {
+                                                    id: 'read',
+                                                    label: `Read (${contacts.length - unreadContactCount})`
+                                                }
+                                            ].map((filter) => (
+                                                <button
+                                                    key={filter.id}
+                                                    type='button'
+                                                    onClick={() =>
+                                                        setContactFilter(
+                                                            filter.id
+                                                        )
+                                                    }
+                                                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${contactFilter === filter.id
+                                                            ? 'bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white shadow-md shadow-purple-500/20'
+                                                            : 'bg-purple-50 text-slate-500 hover:text-purple-600'
+                                                        }`}
+                                                >
+                                                    {filter.label}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {filteredContacts.length === 0 ? (
+                                    <div className='bg-white rounded-3xl p-16 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-purple-50'>
+                                        <div className='w-20 h-20 bg-purple-50 rounded-full flex items-center justify-center mx-auto mb-4'>
+                                            <Mail
+                                                className='text-purple-300'
+                                                size={38}
+                                            />
+                                        </div>
+
+                                        <p className='text-slate-600 font-bold'>
+                                            No contact messages found
+                                        </p>
+
+                                        <p className='text-slate-400 text-sm mt-1'>
+                                            New messages from the Contact Us page will appear here.
+                                        </p>
+                                    </div>
+                                ) : (
+                                    <div className='grid grid-cols-1 xl:grid-cols-2 gap-5'>
+                                        {filteredContacts.map((contact) => (
+                                            <motion.article
+                                                key={contact._id}
+                                                layout
+                                                initial={{
+                                                    opacity: 0,
+                                                    y: 10
+                                                }}
+                                                animate={{
+                                                    opacity: 1,
+                                                    y: 0
+                                                }}
+                                                className={`bg-white rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border transition-all ${contact.read
+                                                        ? 'border-purple-50'
+                                                        : 'border-fuchsia-200 ring-4 ring-fuchsia-50'
+                                                    }`}
+                                            >
+                                                <div className='flex items-start justify-between gap-4'>
+                                                    <div className='flex items-start gap-4 min-w-0'>
+                                                        <div
+                                                            className={`w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 ${contact.read
+                                                                    ? 'bg-slate-100 text-slate-400'
+                                                                    : 'bg-fuchsia-50 text-fuchsia-500'
+                                                                }`}
+                                                        >
+                                                            <Mail size={20} />
+                                                        </div>
+
+                                                        <div className='min-w-0'>
+                                                            <div className='flex flex-wrap items-center gap-2'>
+                                                                <h3 className='font-bold text-slate-900 truncate'>
+                                                                    {contact.name}
+                                                                </h3>
+
+                                                                {!contact.read && (
+                                                                    <span className='px-2.5 py-1 rounded-full bg-fuchsia-50 text-fuchsia-600 text-[10px] font-bold uppercase tracking-wider'>
+                                                                        New
+                                                                    </span>
+                                                                )}
+                                                            </div>
+
+                                                            <p className='text-xs text-slate-400 mt-1'>
+                                                                {contact.createdAt
+                                                                    ? new Date(
+                                                                        contact.createdAt
+                                                                    ).toLocaleString(
+                                                                        'en-PH',
+                                                                        {
+                                                                            month: 'short',
+                                                                            day: 'numeric',
+                                                                            year: 'numeric',
+                                                                            hour: '2-digit',
+                                                                            minute: '2-digit'
+                                                                        }
+                                                                    )
+                                                                    : 'Date unavailable'}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <button
+                                                        type='button'
+                                                        onClick={() =>
+                                                            setPendingDeleteContactId(
+                                                                contact._id
+                                                            )
+                                                        }
+                                                        className='p-2.5 rounded-xl text-slate-300 hover:text-rose-500 hover:bg-rose-50 transition-colors shrink-0'
+                                                        title='Delete message'
+                                                    >
+                                                        <Trash2 size={17} />
+                                                    </button>
+                                                </div>
+
+                                                <div className='mt-5 grid sm:grid-cols-2 gap-3'>
+                                                    <a
+                                                        href={`mailto:${contact.email}`}
+                                                        className='flex items-center gap-2 rounded-xl bg-purple-50/60 px-3 py-2.5 text-sm text-slate-600 hover:text-purple-600 transition-colors min-w-0'
+                                                    >
+                                                        <Mail
+                                                            size={15}
+                                                            className='text-purple-400 shrink-0'
+                                                        />
+
+                                                        <span className='truncate'>
+                                                            {contact.email}
+                                                        </span>
+                                                    </a>
+
+                                                    {contact.phone ? (
+                                                        <a
+                                                            href={`tel:${contact.phone}`}
+                                                            className='flex items-center gap-2 rounded-xl bg-purple-50/60 px-3 py-2.5 text-sm text-slate-600 hover:text-purple-600 transition-colors min-w-0'
+                                                        >
+                                                            <Phone
+                                                                size={15}
+                                                                className='text-purple-400 shrink-0'
+                                                            />
+
+                                                            <span className='truncate'>
+                                                                {contact.phone}
+                                                            </span>
+                                                        </a>
+                                                    ) : (
+                                                        <div className='flex items-center gap-2 rounded-xl bg-slate-50 px-3 py-2.5 text-sm text-slate-400'>
+                                                            <Phone size={15} />
+                                                            No phone provided
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                                <div className='mt-5 rounded-2xl bg-slate-50 border border-slate-100 p-4'>
+                                                    <p className='text-sm text-slate-600 leading-relaxed whitespace-pre-wrap break-words'>
+                                                        {contact.message}
+                                                    </p>
+                                                </div>
+
+                                                <div className='mt-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3'>
+                                                    <p className='text-xs text-slate-400'>
+                                                        Reply using the sender&apos;s email or phone number.
+                                                    </p>
+
+                                                    {!contact.read && (
+                                                        <button
+                                                            type='button'
+                                                            disabled={
+                                                                updatingContactId ===
+                                                                contact._id
+                                                            }
+                                                            onClick={() =>
+                                                                handleMarkContactRead(
+                                                                    contact._id
+                                                                )
+                                                            }
+                                                            className='inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-purple-50 text-purple-600 hover:bg-purple-100 text-xs font-bold transition-colors disabled:opacity-50'
+                                                        >
+                                                            {updatingContactId ===
+                                                                contact._id ? (
+                                                                <Loader2
+                                                                    size={15}
+                                                                    className='animate-spin'
+                                                                />
+                                                            ) : (
+                                                                <CheckCircle
+                                                                    size={15}
+                                                                />
+                                                            )}
+
+                                                            Mark as Read
+                                                        </button>
+                                                    )}
+                                                </div>
+                                            </motion.article>
+                                        ))}
+                                    </div>
+                                )}
                             </motion.div>
                         )}
 
@@ -1144,12 +1469,12 @@ export default function Admin() {
 
             {/* MOBILE BOTTOM NAVIGATION */}
             <nav className='lg:hidden fixed bottom-0 left-0 w-full bg-white/90 backdrop-blur-xl border-t border-purple-100 z-40 pb-safe'>
-                <div className='flex justify-around items-center p-2'>
+                <div className='flex items-center gap-1 p-2 overflow-x-auto'>
                     {TABS.map(tab => {
                         const isActive = activeTab === tab.id
                         return (
                             <button key={tab.id} onClick={() => setActiveTab(tab.id)}
-                                className={`flex flex-col items-center gap-1 p-2 rounded-xl min-w-[64px] transition-all ${isActive ? 'text-fuchsia-600' : 'text-slate-400 hover:text-purple-500'}`}>
+                                className={`flex flex-col items-center gap-1 p-2 rounded-xl min-w-[72px] flex-1 transition-all ${isActive ? 'text-fuchsia-600' : 'text-slate-400 hover:text-purple-500'}`}>
                                 <div className={`p-1.5 rounded-lg ${isActive ? 'bg-fuchsia-50' : ''}`}>
                                     <tab.icon size={20} />
                                 </div>
@@ -1180,6 +1505,79 @@ export default function Admin() {
                                 </button>
                                 <button onClick={confirmDeleteAppointment} className='px-6 py-3 text-sm font-bold text-white bg-rose-500 rounded-2xl hover:bg-rose-600 shadow-lg shadow-rose-500/20 transition-all'>
                                     Delete Booking
+                                </button>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
+            {/* DELETE CONTACT MESSAGE MODAL */}
+            <AnimatePresence>
+                {pendingDeleteContactId && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className='fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4'
+                        onClick={() =>
+                            setPendingDeleteContactId(null)
+                        }
+                    >
+                        <motion.div
+                            initial={{
+                                scale: 0.95,
+                                opacity: 0,
+                                y: 10
+                            }}
+                            animate={{
+                                scale: 1,
+                                opacity: 1,
+                                y: 0
+                            }}
+                            exit={{
+                                scale: 0.95,
+                                opacity: 0,
+                                y: 10
+                            }}
+                            className='w-full max-w-md bg-white rounded-[2rem] border border-purple-100 shadow-2xl p-8'
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <div className='flex items-start gap-5'>
+                                <div className='p-4 rounded-2xl bg-rose-50 text-rose-500 shrink-0'>
+                                    <AlertTriangle size={28} />
+                                </div>
+
+                                <div>
+                                    <h3 className='text-xl font-bold text-slate-900'>
+                                        Delete Message?
+                                    </h3>
+
+                                    <p className='text-sm text-slate-500 mt-2 leading-relaxed'>
+                                        This permanently removes the contact message from the database.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className='mt-8 flex justify-end gap-3'>
+                                <button
+                                    type='button'
+                                    onClick={() =>
+                                        setPendingDeleteContactId(
+                                            null
+                                        )
+                                    }
+                                    className='px-6 py-3 text-sm font-bold text-slate-600 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors'
+                                >
+                                    Cancel
+                                </button>
+
+                                <button
+                                    type='button'
+                                    onClick={confirmDeleteContact}
+                                    className='px-6 py-3 text-sm font-bold text-white bg-rose-500 rounded-2xl hover:bg-rose-600 shadow-lg shadow-rose-500/20 transition-all'
+                                >
+                                    Delete Message
                                 </button>
                             </div>
                         </motion.div>

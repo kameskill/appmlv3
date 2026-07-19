@@ -2120,6 +2120,130 @@ router.get(
 )
 
 // ─────────────────────────────────────────────────────────────
+// PATCH /api/admin/contacts/:id/read
+// ─────────────────────────────────────────────────────────────
+
+router.patch(
+    '/contacts/:id/read',
+    async (req, res) => {
+        if (
+            !mongoose.isValidObjectId(
+                req.params.id
+            )
+        ) {
+            return res
+                .status(400)
+                .json({
+                    success: false,
+                    message:
+                        'Invalid contact message ID'
+                })
+        }
+
+        try {
+            const contact =
+                await Contact.findByIdAndUpdate(
+                    req.params.id,
+                    {
+                        read: true
+                    },
+                    {
+                        new: true,
+                        runValidators: true
+                    }
+                )
+
+            if (!contact) {
+                return res
+                    .status(404)
+                    .json({
+                        success: false,
+                        message:
+                            'Contact message not found'
+                    })
+            }
+
+            return res.json({
+                success: true,
+                message:
+                    'Contact message marked as read',
+                contact
+            })
+        } catch (error) {
+            console.error(
+                'Mark contact message as read error:',
+                error
+            )
+
+            return res
+                .status(500)
+                .json({
+                    success: false,
+                    message: 'Server error'
+                })
+        }
+    }
+)
+
+// ─────────────────────────────────────────────────────────────
+// DELETE /api/admin/contacts/:id
+// ─────────────────────────────────────────────────────────────
+
+router.delete(
+    '/contacts/:id',
+    async (req, res) => {
+        if (
+            !mongoose.isValidObjectId(
+                req.params.id
+            )
+        ) {
+            return res
+                .status(400)
+                .json({
+                    success: false,
+                    message:
+                        'Invalid contact message ID'
+                })
+        }
+
+        try {
+            const contact =
+                await Contact.findByIdAndDelete(
+                    req.params.id
+                )
+
+            if (!contact) {
+                return res
+                    .status(404)
+                    .json({
+                        success: false,
+                        message:
+                            'Contact message not found'
+                    })
+            }
+
+            return res.json({
+                success: true,
+                message:
+                    'Contact message deleted successfully'
+            })
+        } catch (error) {
+            console.error(
+                'Delete contact message error:',
+                error
+            )
+
+            return res
+                .status(500)
+                .json({
+                    success: false,
+                    message: 'Server error'
+                })
+        }
+    }
+)
+
+// ─────────────────────────────────────────────────────────────
 // GET /api/admin/notifications
 // ─────────────────────────────────────────────────────────────
 
