@@ -35,6 +35,92 @@ const sanitizePhoneInput = (value) => {
     return digits.slice(0, 10)
 }
 
+const OTP_COOLDOWN_SECONDS = 5 * 60
+const OTP_COOLDOWN_STORAGE_PREFIX =
+    'timmytails-signup-otp-cooldown'
+
+const getOtpCooldownStorageKey = (phone) =>
+    `${OTP_COOLDOWN_STORAGE_PREFIX}:${phone}`
+
+const getRemainingOtpCooldown = (phone) => {
+    if (
+        !phone ||
+        typeof window === 'undefined'
+    ) {
+        return 0
+    }
+
+    const storedValue =
+        window.localStorage.getItem(
+            getOtpCooldownStorageKey(phone)
+        )
+
+    const expiresAt =
+        Number(storedValue)
+
+    if (
+        !Number.isFinite(expiresAt) ||
+        expiresAt <= Date.now()
+    ) {
+        window.localStorage.removeItem(
+            getOtpCooldownStorageKey(phone)
+        )
+
+        return 0
+    }
+
+    return Math.ceil(
+        (expiresAt - Date.now()) / 1000
+    )
+}
+
+const startOtpCooldown = (phone) => {
+    if (
+        !phone ||
+        typeof window === 'undefined'
+    ) {
+        return
+    }
+
+    const expiresAt =
+        Date.now() +
+        OTP_COOLDOWN_SECONDS * 1000
+
+    window.localStorage.setItem(
+        getOtpCooldownStorageKey(phone),
+        String(expiresAt)
+    )
+}
+
+const clearOtpCooldown = (phone) => {
+    if (
+        !phone ||
+        typeof window === 'undefined'
+    ) {
+        return
+    }
+
+    window.localStorage.removeItem(
+        getOtpCooldownStorageKey(phone)
+    )
+}
+
+const formatCooldown = (seconds) => {
+    const minutes =
+        Math.floor(seconds / 60)
+
+    const remainingSeconds =
+        seconds % 60
+
+    return `${String(minutes).padStart(
+        2,
+        '0'
+    )}:${String(remainingSeconds).padStart(
+        2,
+        '0'
+    )}`
+}
+
 export default function Signup() {
     const navigate = useNavigate()
     const { user, register, sendRegisterOtp } = useAuth()
@@ -57,6 +143,7 @@ export default function Signup() {
     const [isLoading, setIsLoading] = useState(false)
     const [passwordStrength, setPasswordStrength] = useState(0)
     const [otpSent, setOtpSent] = useState(false)
+    const [otpCooldown, setOtpCooldown] = useState(0)
 
 
     const normalizedPhone =
@@ -71,6 +158,39 @@ export default function Signup() {
             navigate('/dashboard', { replace: true })
         }
     }, [user, navigate])
+
+    useEffect(() => {
+        setOtpCooldown(
+            getRemainingOtpCooldown(
+                normalizedPhone
+            )
+        )
+    }, [normalizedPhone])
+
+    useEffect(() => {
+        if (otpCooldown <= 0) {
+            return undefined
+        }
+
+        const timer =
+            window.setInterval(() => {
+                const remaining =
+                    getRemainingOtpCooldown(
+                        normalizedPhone
+                    )
+
+                setOtpCooldown(
+                    remaining
+                )
+            }, 1000)
+
+        return () => {
+            window.clearInterval(timer)
+        }
+    }, [
+        otpCooldown,
+        normalizedPhone
+    ])
 
     const handleInputChange = (e) => {
         const {
@@ -175,6 +295,25 @@ export default function Signup() {
     }
 
     const handleSendOtp = async () => {
+        const remainingCooldown =
+            getRemainingOtpCooldown(
+                normalizedPhone
+            )
+
+        if (remainingCooldown > 0) {
+            setOtpCooldown(
+                remainingCooldown
+            )
+
+            toast.error(
+                `Please wait ${formatCooldown(
+                    remainingCooldown
+                )} before requesting another OTP.`
+            )
+
+            return
+        }
+
         const newErrors =
             validateBaseForm()
 
@@ -202,6 +341,14 @@ export default function Signup() {
                 phone: normalizedPhone,
                 password
             })
+
+            startOtpCooldown(
+                normalizedPhone
+            )
+
+            setOtpCooldown(
+                OTP_COOLDOWN_SECONDS
+            )
 
             setOtpSent(true)
 
@@ -245,6 +392,10 @@ export default function Signup() {
                 `Welcome to Timmy Tails, ${data.user.firstName}!`
             )
 
+            clearOtpCooldown(
+                normalizedPhone
+            )
+
             navigate('/dashboard')
         } catch (error) {
             toast.error(
@@ -268,6 +419,10 @@ export default function Signup() {
             : passwordStrength === 3
                 ? 'Good'
                 : 'Strong'
+
+    const otpRequestDisabled =
+        isLoading ||
+        otpCooldown > 0
 
     const inputClass = (field) =>
         `w-full pl-12 pr-4 py-3 border-2 rounded-lg focus:outline-none focus:ring-4 transition-all ${errors[field]
@@ -723,13 +878,17 @@ export default function Signup() {
                                         handleSendOtp
                                     }
                                     disabled={
-                                        isLoading
+                                        otpRequestDisabled
                                     }
                                     className='cursor-pointer w-full bg-gradient-to-r from-purple-600 to-purple-500 text-white py-3 rounded-lg font-bold hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed mt-6 focus:outline-none focus:ring-4 focus:ring-purple-200'
                                 >
                                     {isLoading
                                         ? 'Sending OTP...'
-                                        : 'Send OTP'}
+                                        : otpCooldown > 0
+                                            ? `Wait ${formatCooldown(
+                                                otpCooldown
+                                            )}`
+                                            : 'Send OTP'}
                                 </motion.button>
                             </form>
                         ) : (
@@ -808,11 +967,17 @@ export default function Signup() {
                                             handleSendOtp
                                         }
                                         disabled={
-                                            isLoading
+                                            otpRequestDisabled
                                         }
                                         className='cursor-pointer flex-1 border-2 border-purple-300 text-purple-700 py-3 rounded-lg font-bold hover:bg-purple-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-4 focus:ring-purple-100'
                                     >
-                                        Resend OTP
+                                        {isLoading
+                                            ? 'Sending...'
+                                            : otpCooldown > 0
+                                                ? `Resend in ${formatCooldown(
+                                                    otpCooldown
+                                                )}`
+                                                : 'Resend OTP'}
                                     </motion.button>
 
                                     <motion.button

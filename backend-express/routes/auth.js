@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const rateLimit = require('express-rate-limit')
 const { body, validationResult } = require('express-validator')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
@@ -9,6 +10,66 @@ const { sendOtp } = require('../services/textbee')
 const { protect } = require('../middleware/auth')
 
 const OTP_TTL_MS = 10 * 60 * 1000
+const OTP_REQUEST_COOLDOWN_MS = 5 * 60 * 1000
+
+const otpRequestLimiter = rateLimit({
+    windowMs: OTP_REQUEST_COOLDOWN_MS,
+    max: 1,
+
+    standardHeaders: true,
+    legacyHeaders: false,
+
+    /*
+     * Apply the cooldown separately for each OTP endpoint
+     * and Philippine mobile number.
+     */
+    keyGenerator: (req) => {
+        const normalizedPhone =
+            normalizePhone(req.body?.phone)
+
+        const fallbackPhone =
+            String(req.body?.phone || '')
+                .replace(/\D/g, '')
+
+        return [
+            req.path,
+            normalizedPhone ||
+            fallbackPhone ||
+            req.ip
+        ].join(':')
+    },
+
+    /*
+     * Validation errors and failed TextBee requests do not
+     * consume the five-minute cooldown.
+     */
+    skipFailedRequests: true,
+
+    handler: (req, res) => {
+        const resetTime =
+            req.rateLimit?.resetTime
+
+        const retryAfter =
+            resetTime instanceof Date
+                ? Math.max(
+                    1,
+                    Math.ceil(
+                        (
+                            resetTime.getTime() -
+                            Date.now()
+                        ) / 1000
+                    )
+                )
+                : 5 * 60
+
+        return res.status(429).json({
+            success: false,
+            message:
+                'An OTP was already requested. Please wait 5 minutes before requesting another code.',
+            retryAfter
+        })
+    }
+})
 
 const generateToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -76,6 +137,7 @@ router.post(
         body('phone').notEmpty().trim().withMessage('Phone is required'),
         body('password').isLength({ min: 8 }).withMessage('Password must be at least 8 characters')
     ],
+    otpRequestLimiter,
     async (req, res) => {
         if (!validateRequest(req, res)) return
 
@@ -204,6 +266,7 @@ router.post(
                 'Phone is required'
             )
     ],
+    otpRequestLimiter,
     async (req, res) => {
         if (!validateRequest(req, res)) {
             return

@@ -77,8 +77,7 @@ const appointmentSchema = new mongoose.Schema(
         },
         revenueRecordedAt: {
             type: Date,
-            default: null,
-            index: true
+            default: null
         }
     },
     { timestamps: true }
